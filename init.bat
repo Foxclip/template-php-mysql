@@ -1,4 +1,5 @@
 @echo off
+
 if exist ".git" (
     echo Removing existing .git directory...
     rmdir /s /q ".git"
@@ -6,6 +7,9 @@ if exist ".git" (
 
 echo Initializing new Git repository...
 git init
+
+echo Installing dependencies...
+npm install
 
 echo Cleaning up and deleting this script...
 del "%~f0"

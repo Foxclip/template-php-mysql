@@ -9,6 +9,8 @@
 <body>
     <main>
         <?php echo 'Index page'; ?>
+        <div id="typescript"></div>
     </main>
+    <script src="/js/index.js"></script>
 </body>
 </html>
